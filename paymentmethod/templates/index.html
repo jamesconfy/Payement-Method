@@ -3,15 +3,8 @@
 {% block content %}
   <div>
     <h2>Buy for $5.00</h2>
-    <form action="{{ url_for('checkout') }}" method="POST">
-      <script
-        src="https://checkout.stripe.com/checkout.js"
-        class="stripe-button"
-        data-key="{{ key }}"
-        data-description="A Flask Charge"
-        data-amount="500"
-        data-locale="auto">
-      </script>
-    </form>
+    <button>
+        <a href="https://paystack.com/pay/5w6n-342vz">Purchase!</a>
+    </button>
   </div>
 {% endblock %}
